@@ -40,7 +40,6 @@ body {
 /* Header Section */
 .header {
     text-align: center;
-    background-image: url('D:\Internship - IGB Media\Alivecine\assets\video.png'); /* Replace with your header image */
     background-size: cover;
     background-position: center;
 }
@@ -69,7 +68,11 @@ body {
 }
 
 /* Title Heroes Section */
-.title{
+.title {
+    background-image: url(../assets/bg-hero.png); /* Pastikan jalur file gambar benar */
+    background-size: cover; /* Menjaga gambar agar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     height: 800px; 
     display: flex;
     justify-content: center;
@@ -77,20 +80,22 @@ body {
     background-color: #000; 
 }
 
-.title .container p{
+.title .container p {
     margin: 0 150px; 
 }
 
 .title .container span {
     color: #e32658;
 }
+
 .title .container {
     color: #ffffff; 
 }
 
-.title .container .row-title-p{
+.title .container .row-title-p {
     max-width: 60%;   
 }
+
 
 /* Stats Section */
 .stats {
@@ -100,7 +105,7 @@ body {
 
 .stat h2 {
     font-size: 2.5em;
-    color: #e32658;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -117,6 +122,10 @@ body {
 
 /* Services Section */
 .our-services {
+    background-image: url(../assets/blue.png); /* Pastikan jalur file gambar benar */
+    background-size: cover; /* Menjaga gambar agar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     padding: 250px 0;
     display: flex;
     justify-content: center;
@@ -142,10 +151,9 @@ body {
     border-radius: 10px;
 }
 
-.cinematic-preview h4 {
+.cinematic-preview p {
     border-radius: 5px;
     background-color: rgba(217, 10, 44, 1);
-    position: absolute;
     padding: 50px 60px;
     overflow: hidden;
     text-transform: uppercase;
@@ -157,7 +165,6 @@ body {
     left: 0px;
 }
 
-/* Right Column: Description */
 .service-description {
     width: 50%;
 }
@@ -200,6 +207,10 @@ body {
 
 /* Works Section */
 .works {
+    /* background-image: url(../assets/bg-hero.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; */
     color: #fff;
     padding: 250px 0; 
     display: flex; 
@@ -225,6 +236,10 @@ body {
 
 /* Out Clients Section */
 .our-clients {
+    /* background-image: url(../assets/bg-hero.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
     color: #fff;
     margin-left: 50px;
     border-top-left-radius: 30px; 
@@ -253,6 +268,10 @@ body {
 
 /* Footer section */
 .footer {
+    background-image: url(../assets/Footer.png); /* Pastikan jalur file gambar benar */
+    background-size: cover; /* Menjaga gambar agar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
     padding: 30px;
     background-color: #1b1b1d;
     text-align: left;
