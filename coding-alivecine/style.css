@@ -1,28 +1,40 @@
-/* Import Google Font Inter */
+/* Import Google Font Inter dan Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: MusticaPro-SemiBold;
+    src: url(/fonts/MusticaPro-SemiBold.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    font-family: 'Raleway';
+}
+
+p{
+    font-family: 'Raleway';
+}
 
 h1{
     font-size: 40px;
+    font-family: 'MusticaPro-SemiBold', sans-serif;
 }
 
 h2{
     font-size: 36px;
+    font-family: 'MusticaPro-SemiBold', sans-serif;
 }
 
 h3{
     font-size: 32px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'MusticaPro-SemiBold', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;  /* Apply Inter font */
-    background-color: #05020D;  /* Updated background color */
-    color: #fff;
+    font-family: 'Inter', sans-serif;
+    background-color: #111;
+
 }
 
 /* Header Section */
@@ -56,28 +68,33 @@ body {
     font-size: 16px;
 }
 
-.container span {
-    color: #e32658; /* Cinematic word color */
-}
-
+/* Title Heroes Section */
 .title{
-    width: 1440px;           /* Set lebar section */
-    height: 900px;           /* Set tinggi section */
-    display: flex;           /* Flexbox digunakan untuk memudahkan centering */
-    justify-content: center; /* Membuat konten berada di tengah secara horizontal */
-    align-items: center;     /* Membuat konten berada di tengah secara vertikal */
-    background-color: #000;  /* Optional: Set background color */
-    
+    height: 800px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #000; 
 }
 
-.title p{
-    padding-left: 250px;
-    padding-right: 250px;
+.title .container p{
+    margin: 0 150px; 
+}
+
+.title .container span {
+    color: #e32658;
+}
+.title .container {
+    color: #ffffff; 
+}
+
+.title .container .row-title-p{
+    max-width: 60%;   
 }
 
 /* Stats Section */
 .stats {
-    background-color: #111; /* Dark background to match other sections */
+    background-color: #111;
     color: #fff;
 }
 
@@ -92,11 +109,18 @@ body {
     font-weight: 500;
     color: #fff;
 }
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
 
 /* Services Section */
 .our-services {
-    padding: 50px;
-    /* background: linear-gradient(145deg, #121212, #1e1e1e); Background with gradient */
+    padding: 250px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     color: #ffffff;
 }
 
@@ -122,12 +146,15 @@ body {
     border-radius: 5px;
     background-color: rgba(217, 10, 44, 1);
     position: absolute;
-    padding: 100px;
+    padding: 50px 60px;
     overflow: hidden;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
     margin: auto;
+    z-index: 1;
+    bottom: 250px;
+    left: 0px;
 }
 
 /* Right Column: Description */
@@ -173,15 +200,11 @@ body {
 
 /* Works Section */
 .works {
-    /* background-color: #1b1b1d; Dark background */
     color: #fff;
-    text-align: center;
-}
-
-.works h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    font-weight: 700;
+    padding: 250px 0; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .work-items {
@@ -200,46 +223,38 @@ body {
     object-fit: cover;
 }
 
+/* Out Clients Section */
 .our-clients {
-    background-color: #444; /* Background hitam seperti gambar */
     color: #fff;
-    padding: 50px 0;
-    margin-left: 50px; /* Beri spasi di sisi kiri */
-    border-top-left-radius: 30px; /* Radius melengkung di sudut atas kiri */
-}
-
-.our-clients h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #fff; /* Warna abu-abu sesuai gambar */
-    margin-bottom: 30px;
+    margin-left: 50px;
+    border-top-left-radius: 30px; 
+    padding: 250px 0;
 }
 
 .client-logos {
+    background-color: #444;
+    border-radius: 50px; 
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 kolom dalam 1 baris */
-    gap: 20px; /* Spasi antar logo */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px; 
     justify-items: center;
     align-items: center;
-    padding: 0 20px; /* Menambahkan padding horizontal agar konten tidak menempel */
 }
 
 .logo-item img {
-    max-width: 100px; /* Ukuran maksimum untuk logo */
-    opacity: 0.8; /* Sesuaikan transparansi jika diperlukan */
+    max-width: 120px; 
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .logo-item img:hover {
-    opacity: 1; /* Hover efek untuk menonjolkan logo */
+    opacity: 1;
 }
-
-
 
 /* Footer section */
 .footer {
     padding: 30px;
-    /* background-color: #1b1b1d; */
+    background-color: #1b1b1d;
     text-align: left;
 }
 
@@ -253,7 +268,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
-    /* background-color: #1e1e1e; */
     color: #fff;
 }
 
@@ -284,4 +298,27 @@ body {
 .row-footer{
     padding: 25px 0px;
     text-align: center;
+}
+
+/* Favicon Logo on Footer */
+.icon-circle {
+    display: inline-block;
+    background-color: #e32658;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    text-decoration: none;
+}
+
+.icon-circle i {
+    font-size: 20px;
+}
+
+.icon-circle:hover {
+    background-color: #A71F43;
 }
