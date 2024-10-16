@@ -1,0 +1,286 @@
+/* Import Google Font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;  /* Apply Inter font */
+    background-color: #05020D;  /* Updated background color */
+    color: #fff;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    background-image: url('D:\Internship - IGB Media\Alivecine\assets\video.png'); /* Replace with your header image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.nav-links li {
+    margin-left: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.container span {
+    color: #e32658; /* Cinematic word color */
+}
+
+.title{
+    width: 1440px;           /* Set lebar section */
+    height: 900px;           /* Set tinggi section */
+    display: flex;           /* Flexbox digunakan untuk memudahkan centering */
+    justify-content: center; /* Membuat konten berada di tengah secara horizontal */
+    align-items: center;     /* Membuat konten berada di tengah secara vertikal */
+    background-color: #000;  /* Optional: Set background color */
+    
+}
+
+.title p{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+/* Stats Section */
+.stats {
+    background-color: #111; /* Dark background to match other sections */
+    color: #fff;
+}
+
+.stat h2 {
+    font-size: 2.5em;
+    color: #e32658;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Services Section */
+.our-services {
+    padding: 50px;
+    /* background: linear-gradient(145deg, #121212, #1e1e1e); Background with gradient */
+    color: #ffffff;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Left Column: Image */
+.service-image {
+    position: relative;
+    width: 50%;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cinematic-preview h4 {
+    border-radius: 5px;
+    background-color: rgba(217, 10, 44, 1);
+    position: absolute;
+    padding: 100px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: auto;
+}
+
+/* Right Column: Description */
+.service-description {
+    width: 50%;
+}
+
+.service-description h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-description h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #e32658;
+    margin-bottom: 15px;
+}
+
+.service-description p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.service-tags {
+    display: flex;
+    gap: 15px;
+}
+
+.service-tags span {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.box-videography{
+    background-color: #151515;
+    padding: 50px;
+}
+
+/* Works Section */
+.works {
+    /* background-color: #1b1b1d; Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.works h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.work-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-item {
+    width: 200px;
+    height: 200px;
+}
+
+.work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-clients {
+    background-color: #444; /* Background hitam seperti gambar */
+    color: #fff;
+    padding: 50px 0;
+    margin-left: 50px; /* Beri spasi di sisi kiri */
+    border-top-left-radius: 30px; /* Radius melengkung di sudut atas kiri */
+}
+
+.our-clients h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff; /* Warna abu-abu sesuai gambar */
+    margin-bottom: 30px;
+}
+
+.client-logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 kolom dalam 1 baris */
+    gap: 20px; /* Spasi antar logo */
+    justify-items: center;
+    align-items: center;
+    padding: 0 20px; /* Menambahkan padding horizontal agar konten tidak menempel */
+}
+
+.logo-item img {
+    max-width: 100px; /* Ukuran maksimum untuk logo */
+    opacity: 0.8; /* Sesuaikan transparansi jika diperlukan */
+    transition: opacity 0.3s ease;
+}
+
+.logo-item img:hover {
+    opacity: 1; /* Hover efek untuk menonjolkan logo */
+}
+
+
+
+/* Footer section */
+.footer {
+    padding: 30px;
+    /* background-color: #1b1b1d; */
+    text-align: left;
+}
+
+.footer p {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    /* background-color: #1e1e1e; */
+    color: #fff;
+}
+
+.footer-info div {
+    width: 45%;
+}
+
+.footer-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e32658;
+}
+
+.footer-info p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.row-footer{
+    padding: 25px 0px;
+}
